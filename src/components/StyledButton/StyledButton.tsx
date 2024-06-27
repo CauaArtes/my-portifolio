@@ -19,10 +19,12 @@ const StyledButton: React.FC<StyledButtonProps> = ({children , onClick}) => {
        display: "inline-flex",
        alignItems: "center",
        justifyContent: "center",
+       cursor: 'pointer',
         gap: "10px",
        '&:hover': {
-            color: theme.palette.secondary.contrastText,
-            backgroundColor: theme.palette.secondary.light
+            //color: theme.palette.secondary.contrastText,
+            //backgroundColor: theme.palette.secondary.light,
+            transform: 'scale(1.05)', // Aumenta o botão em 10%
        }
        }))
 
